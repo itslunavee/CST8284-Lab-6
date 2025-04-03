@@ -14,8 +14,8 @@ import java.util.Set;
 
 /**This is the Lab 6 named TariffList.java
 *
-* @author Student's Name
-* Class Description:
+* @author Student's Name: Luna Von Besser
+* Class Description: This class merges to array lists and performs a set of operations including deletion,sorting and removing duplicate items.
 * TariffList has one method(main) which contains methods to perform different operations
 * on two lists of tariffs imposed by US and the retaliation by Canada. 
 * These are created with the contents from two arrays.
@@ -96,7 +96,10 @@ public class TariffList {
 		printNonDuplicates(list1);
 	}
 
-	
+	/**
+	 * Prints all elements of a list using iteration.
+	 * @param list
+	 */
 	public static void printList(List<String> list) {
 	 Iterator<String> it = list.iterator();
 	 while(it.hasNext()){
@@ -104,6 +107,10 @@ public class TariffList {
 	 }
 	}
 
+	/**
+	 * Sorts list alphabetically and then prints it
+	 * @param list
+	 */
 	public static void printSortedList(List<String> list) {
 		Collections.sort(list);
 		printList(list);
@@ -111,7 +118,12 @@ public class TariffList {
 
 
 	
-
+	/**
+	 * Removes items from list indices 3 - 5 and prints the modified list.
+	 * @param list
+	 * @param begin
+	 * @param finish
+	 */
 	public static void removeFromList(List<String> list, int begin, int finish) {
 		list.subList(begin, finish +1).clear();
 		printList(list);
@@ -119,7 +131,11 @@ public class TariffList {
 
 	
 	
-	
+	/**
+	 * Removes duplicates and changes array to linkedHashSet
+	 * Prints new list via iteration. 
+	 * @param list
+	 */
 	public static void printNonDuplicates(List<String> list) {
 		Set<String> set=new LinkedHashSet<>(list); 
 

@@ -1,4 +1,6 @@
-// STUDENT STARTER CODE FILE
+/* Luna Von Besser
+ * 041165988
+ */
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -53,9 +55,11 @@ public class TariffList {
 		List<String> list2 = Arrays.asList(tariffsCAN);
 		
 		//print out the original list1
+		System.out.printf("%nI am printing list 1.%n");
 		printList(list1);
 
 		//print out the original list2
+		System.out.printf("%nI am printing list 2.%n");
 		printList(list2);
 		
 		list1.addAll(list2);
@@ -66,6 +70,7 @@ public class TariffList {
 		
 		
 		//printout the two lists (list1 and list2 added together in list1)
+		System.out.printf("%nI am printing list 1 with list appended.%n");
 		printList(list1);
 
 
